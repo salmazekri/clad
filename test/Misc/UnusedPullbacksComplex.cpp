@@ -1,13 +1,6 @@
 // RUN: %cladclang %s -o %t
 // RUN: %t | FileCheck %s
-/*root@Salma:~/llvm-project/llvm/tools/clad/build# clang++ -std=c++17 \
-    -I/root/llvm-project/llvm/tools/clad/include \
-    -fplugin=/root/llvm-project/llvm/tools/clad/build/lib/clad.so \
-    /root/llvm-project/llvm/tools/clad/test/Misc/UnusedPullbacksComplex.cpp \
-    -o test_pullback
 
-./test_pullback
-4*/
 #include <iostream>
 #include "clad/Differentiator/Differentiator.h"
 
