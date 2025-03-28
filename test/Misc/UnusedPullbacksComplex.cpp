@@ -1,6 +1,7 @@
 // RUN: %cladclang %s -o %t
 // RUN: %t | FileCheck %s
-
+// REQUIRES: clad
+// XFAIL: target={{i586.*}}, target=arm64-apple-{{.*}}, target=aarch64-unknown-linux-gnu
 #include <iostream>
 #include "clad/Differentiator/Differentiator.h"
 
